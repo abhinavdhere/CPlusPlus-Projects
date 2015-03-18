@@ -7,20 +7,26 @@ using namespace std;
 
 int number(string n){
 int num;
-switch (n){
-case 1:
-    num=1;
-    return num;
-case 2:
-    num=2
+if (n=="1"){
+    return num=1;
 }
-cout<<n;
-return 0;
+if (n=="2"){
+    return num=2;
+}
+if (n=="3"){
+    return num=3;
+}
+if (n=="4"){
+    return num=4;
+}
 }
 
 int main(void){
-string a;
-a="Hello";
-number(a);
+int a;
+string num;
+cout<<"Give number";
+cin>>num;
+a=number(num);
+cout<<a+1;
 return 0;
 }
